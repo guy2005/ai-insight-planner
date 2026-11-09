@@ -16,7 +16,7 @@ export default function Navbar() {
               </span>
               <span className="inline-flex items-center gap-1 rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-semibold text-indigo-700 ring-1 ring-inset ring-indigo-600/20">
                 <Sparkles className="h-3 w-3 text-indigo-600" />
-                Gemini 1.5 Flash
+                Gemini AI Flash
               </span>
             </div>
             <p className="hidden text-xs text-slate-500 sm:block">

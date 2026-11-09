@@ -290,8 +290,9 @@ export async function POST(req: NextRequest): Promise<NextResponse<AnalyzeRespon
     const genAI = new GoogleGenerativeAI(rawApiKey);
 
     // 4. กำหนด System Instruction และ JSON Schema สำหรับ Structured Output
+    // ใช้โมเดล gemini-3.8-flash ซึ่งเป็นโมเดล Flash ประสิทธิภาพสูงล่าสุด
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash",
+      model: "gemini-3.8-flash",
       systemInstruction: `คุณเป็น Senior Business Analyst และ Executive Consultant ผู้เชี่ยวชาญด้านการวิเคราะห์ข้อมูล 
 หน้าที่ของคุณคือ:
 1. วิเคราะห์เนื้อหาที่ได้รับอย่างละเอียด ไม่ว่าจะเป็นโน้ตการเรียน, ไอเดียธุรกิจ, บันทึกการประชุม หรือบทความ
