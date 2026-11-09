@@ -96,7 +96,7 @@ export default function HomePage() {
           </h1>
           <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600 sm:text-base">
             เปลี่ยนโน้ตการเรียน ไอเดียธุรกิจ หรือข้อสรุปการประชุมที่กระจัดกระจาย
-            ให้กลายเป็นข้อสรุปที่คมชัดและแผนปฏิบัติการแบบเป็นขั้นตอน (Structured Output) ด้วย Google Gemini 1.5 Flash
+            ให้กลายเป็นข้อสรุปที่คมชัดและแผนปฏิบัติการแบบเป็นขั้นตอน (Structured Output) ด้วย Google Gemini 3.8 Flash (Latest Free Model)
           </p>
         </div>
 
@@ -208,7 +208,7 @@ export default function HomePage() {
           <div className="flex items-center gap-2 text-slate-400">
             <span>Next.js 14 App Router</span>
             <span>•</span>
-            <span>Gemini 1.5 Flash</span>
+            <span>Gemini 3.8 Flash (Latest Free Model)</span>
             <span>•</span>
             <span>TypeScript</span>
           </div>

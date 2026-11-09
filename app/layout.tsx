@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "AI Insight & Action Plan Generator",
   description:
     "วิเคราะห์เนื้อหา สรุปใจความสำคัญ และสกัดเป็น Action Plan อย่างมีระบบด้วย Google Gemini AI",
-  keywords: ["AI", "Action Plan", "Gemini 1.5 Flash", "Next.js", "Summarizer"],
+  keywords: ["AI", "Action Plan", "Gemini 3.8 Flash", "Next.js", "Summarizer"],
   authors: [{ name: "AI Mini-Project Team" }],
 };
 

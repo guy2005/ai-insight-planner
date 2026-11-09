@@ -1,7 +1,7 @@
 # 🚀 AI Insight & Action Plan Generator
 
 > **โครงงานพัฒนา Web Application ประยุกต์ใช้ปัญญาประดิษฐ์ (AI-Powered Application)**  
-> ระบบวิเคราะห์เนื้อหา/โน้ตการเรียน/ไอเดียธุรกิจ สรุปประเด็นสำคัญ และสกัดออกมาเป็น Action Plan ที่เป็นรูปธรรมด้วย Google Gemini 1.5 Flash (Structured Output)
+> ระบบวิเคราะห์เนื้อหา/โน้ตการเรียน/ไอเดียธุรกิจ สรุปประเด็นสำคัญ และสกัดออกมาเป็น Action Plan ที่เป็นรูปธรรมด้วย Google Gemini 3.8 Flash (Latest Free Model & Structured Output)
 
 ---
 
@@ -34,7 +34,7 @@
 โปรเจกต์นี้ตอบโจทย์รายวิชาการประยุกต์ใช้ AI ผ่านแนวคิดหลัก 4 ประการ:
 
 ### 1. Large Language Model (LLM) Integration
-- ใช้งานโมเดล **Google Gemini 1.5 Flash** ซึ่งมีความเร็วในการตอบสนองสูง (Low Latency) และรองรับ Context Window ขนาดใหญ่ เหมาะสำหรับการประมวลผลข้อความและการทำความเข้าใจภาษาธรรมชาติ (NLP)
+- ใช้งานโมเดล **Google Gemini 3.8 Flash** ซึ่งเป็นโมเดลเวอร์ชันล่าสุดในตระกูล Flash (Free Tier) ที่มีความเร็วในการตอบสนองสูง (Low Latency) และรองรับ Context Window ขนาดใหญ่ เหมาะสำหรับการประมวลผลข้อความและการทำความเข้าใจภาษาธรรมชาติ (NLP) โดยไม่มีค่าใช้จ่ายในการใช้งาน
 
 ### 2. Structured Outputs ผ่าน JSON Schema
 - ปัญหาดั้งเดิมของ LLM คือผลลัพธ์เป็นข้อความอิสระ (Unstructured Free Text) ซึ่งทำให้ระบบหน้าบ้าน (Frontend) นำไปแสดงผลหรือประมวลผลต่อได้ยาก
@@ -72,7 +72,7 @@
         │ 3. ตรวจสอบ Payload & ซ่อน GEMINI_API_KEY
         │ 4. ส่ง Prompt + Strict JSON Schema
         ▼
-[Google Gemini 1.5 Flash API]
+[Google Gemini 3.8 Flash API (Free Tier)]
         │
         │ 5. ส่ง Structured JSON Response
         ▼
@@ -95,7 +95,7 @@
 - **Language**: [TypeScript](https://www.typescriptlang.org/) (Strict Mode)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Icons**: [Lucide React](https://lucide.dev/)
-- **AI Engine**: [Google Gemini 1.5 Flash (`@google/generative-ai`)](https://ai.google.dev/)
+- **AI Engine**: [Google Gemini 3.8 Flash (Latest Free Tier)](https://ai.google.dev/)
 - **Runtime**: Node.js v18+ / v20+ / v22+
 
 ---

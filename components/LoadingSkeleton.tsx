@@ -5,7 +5,7 @@ export default function LoadingSkeleton() {
   const [stepIndex, setStepIndex] = useState(0);
 
   const steps = [
-    { text: "เชื่อมต่อกับ Gemini 1.5 Flash Model...", icon: Brain },
+    { text: "เชื่อมต่อกับ Gemini 3.8 Flash Model (Latest Free Model)...", icon: Brain },
     { text: "วิเคราะห์บริบทและสกัดประเด็นสำคัญ...", icon: Sparkles },
     { text: "สังเคราะห์โครงสร้าง Action Plan และประเมินความสำคัญ...", icon: ListChecks },
     { text: "ตรวจสอบความถูกต้องของ Structured JSON Schema...", icon: Loader2 },
