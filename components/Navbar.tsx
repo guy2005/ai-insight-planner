@@ -27,7 +27,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="https://github.com"
+            href="https://github.com/guy2005/ai-insight-planner"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex min-h-[40px] items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 shadow-sm transition-all duration-200 ease-out hover:bg-slate-50 hover:text-slate-900 active:scale-[0.98]"
