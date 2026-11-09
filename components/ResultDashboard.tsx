@@ -18,11 +18,13 @@ import {
 interface ResultDashboardProps {
   result: AnalysisResult;
   executionTimeMs?: number;
+  isDemoMode?: boolean;
 }
 
 export default function ResultDashboard({
   result,
   executionTimeMs,
+  isDemoMode,
 }: ResultDashboardProps) {
   const [copiedType, setCopiedType] = useState<"text" | "json" | null>(null);
 
@@ -67,9 +69,15 @@ ${result.tags.map((t) => `#${t}`).join(" ")}
             <h2 className="text-xl font-bold tracking-tight text-slate-900">
               ผลการวิเคราะห์ & แผนปฏิบัติการ
             </h2>
-            <span className="inline-flex items-center gap-1 rounded-md bg-emerald-50 px-2 py-0.5 text-xs font-semibold text-emerald-700 ring-1 ring-inset ring-emerald-600/20">
-              <Sparkles className="h-3 w-3" /> สำเร็จ
-            </span>
+            {isDemoMode ? (
+              <span className="inline-flex items-center gap-1 rounded-md bg-amber-50 px-2 py-0.5 text-xs font-semibold text-amber-700 ring-1 ring-inset ring-amber-600/20">
+                <Sparkles className="h-3 w-3" /> Demo Simulation Mode
+              </span>
+            ) : (
+              <span className="inline-flex items-center gap-1 rounded-md bg-emerald-50 px-2 py-0.5 text-xs font-semibold text-emerald-700 ring-1 ring-inset ring-emerald-600/20">
+                <Sparkles className="h-3 w-3" /> Gemini 1.5 Flash
+              </span>
+            )}
           </div>
           {executionTimeMs !== undefined && (
             <p className="mt-1 flex items-center gap-1.5 text-xs text-slate-500">

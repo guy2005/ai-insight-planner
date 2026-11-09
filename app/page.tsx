@@ -21,6 +21,7 @@ export default function HomePage() {
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<AnalysisResult | null>(null);
   const [executionTimeMs, setExecutionTimeMs] = useState<number | undefined>(undefined);
+  const [isDemoMode, setIsDemoMode] = useState<boolean>(false);
 
   // ฟังก์ชันส่งข้อความไปวิเคราะห์ผ่าน Route Handler
   const handleAnalyze = async (e?: React.FormEvent) => {
@@ -49,6 +50,7 @@ export default function HomePage() {
 
       setResult(resData.data);
       setExecutionTimeMs(resData.executionTimeMs);
+      setIsDemoMode(!!resData.isDemoMode);
 
       // เลื่อนหน้าจอลงไปยังส่วนผลลัพธ์แบบ Smooth
       setTimeout(() => {
@@ -75,6 +77,7 @@ export default function HomePage() {
     setResult(null);
     setError(null);
     setExecutionTimeMs(undefined);
+    setIsDemoMode(false);
   };
 
   return (
@@ -177,6 +180,7 @@ export default function HomePage() {
             <ResultDashboard
               result={result}
               executionTimeMs={executionTimeMs}
+              isDemoMode={isDemoMode}
             />
           )}
 

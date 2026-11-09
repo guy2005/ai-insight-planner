@@ -22,4 +22,5 @@ export interface AnalyzeResponse {
   data?: AnalysisResult;
   error?: string;
   executionTimeMs?: number;
+  isDemoMode?: boolean;
 }
