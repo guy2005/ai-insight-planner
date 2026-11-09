@@ -216,36 +216,3 @@ npm run dev
     "tags": ["ธุรกิจคาเฟ่", "Co-working Space", "แผนธุรกิจ", "การบริหารต้นทุน", "การตลาด"]
   }
 }
-```
-
----
-
-## 📤 คู่มือการนำขึ้น GitHub (Git & GitHub Submission)
-
-หากต้องการนำโปรเจกต์นี้ขึ้น GitHub เพื่อส่งงานอาจารย์:
-
-```bash
-# 1. เริ่มต้น Git repository
-git init
-
-# 2. ตรวจสอบสถานะ (ไฟล์ .env.local จะต้องไม่ถูกแทร็ก)
-git status
-
-# 3. เพิ่มไฟล์ทั้งหมด
-git add .
-
-# 4. Commit ไฟล์
-git commit -m "feat: complete AI Insight & Action Plan Generator web application"
-
-# 5. สร้าง Repository ใหม่บน GitHub (เช่น ชื่อ ai-insight-planner)
-# จากนั้นผูก Remote และ Push ขึ้น GitHub
-git branch -M main
-git remote add origin https://github.com/<your-username>/ai-insight-planner.git
-git push -u origin main
-```
-
----
-
-## 👨‍💻 พัฒนาโดย (Authors)
-- โครงงานวิชา: **การประยุกต์ใช้ปัญญาประดิษฐ์ (Artificial Intelligence Application)**
-- ภาคการศึกษา: 2026/2027
